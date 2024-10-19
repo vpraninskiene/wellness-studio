@@ -112,6 +112,7 @@ header #check {
     padding: 8px 20px;
   }
   header nav {
+    top: 58%;
     padding: 10px;
     height: 60px;
     width: 100%;
@@ -124,7 +125,7 @@ header #check {
   }
   header nav ul {
     position: fixed;
-    top: 95px;
+    top: 92px;
     right: -100%;
     background-color: #e1e1e1;
     width: 100%;
@@ -755,6 +756,10 @@ header #check {
   gap: 10px;
   padding-top: 10px;
 }
+.contacts .contacts-and-map .contacts-options .contacts-item a {
+  text-decoration: none;
+  color: white;
+}
 
 @media (min-width: 769px) and (max-width: 1281px) {
   .contacts {
@@ -831,7 +836,7 @@ footer .facebook {
 }
 
 #consentContent p {
-  color: #858585;
+  color: #243238;
   margin: 10px 0 20px 0;
 }
 #consentContent .buttons {
