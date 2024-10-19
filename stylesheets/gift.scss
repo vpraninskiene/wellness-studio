@@ -1,0 +1,95 @@
+#gift {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+  min-height: 73vh;
+
+  .gift-coupon {
+    position: relative;
+    width: 100%;
+    @include flex;
+    gap: 40px;
+    color: white;
+    overflow: hidden;
+    margin-top: 80px;
+    background: url(/img/jpg/dovana-2.jpg);
+    @include img-style;
+    padding: 20px 108px;
+
+    .gift-coupon-text {
+      @include flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    .gift-icon {
+      position: absolute;
+      bottom: -30%;
+      right: 33%;
+      transform: rotate(20deg);
+      opacity: 0.5;
+    }
+
+    .gift-coupon-image {
+      background: url(/img/jpg/gift-coupon.jpg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65%;
+      height: 50vh;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1281px) {
+  #gift {
+    min-height: 50vh;
+    .gift-coupon {
+      padding: 30px;
+      margin-top: 30px;
+
+      .gift-coupon-image {
+        height: 35vh;
+        width: 100%;
+      }
+
+      .gift-icon {
+        bottom: -50%;
+        right: 23%;
+        transform: rotate(20deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #gift {
+    min-height: 40vh;
+    flex-direction: column;
+    .gift-coupon {
+      flex-direction: column-reverse;
+      padding: 30px;
+      margin-top: 30px;
+
+      .gift-coupon-image {
+        width: 90%;
+      }
+
+      .gift-coupon-text {
+        font-size: 22px;
+        padding-top: 40px;
+      }
+
+      .gift-icon {
+        bottom: -40%;
+        right: 33%;
+        transform: rotate(20deg);
+      }
+
+      .gift-coupon-image {
+        height: 25vh;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+#consentBox {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 20;
+}
+
+#consentBox.hide {
+  display: none;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+#consentContent {
+  p {
+    color: #858585;
+    margin: 10px 0 20px 0;
+  }
+
+  .buttons {
+    @include flex;
+    margin-top: 20px;
+  }
+
+  .consentButton,
+  .rejectButton {
+    padding: 12px 30px;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .consentButton {
+    background: $accent-color;
+    margin-right: 10px;
+    color: white;
+  }
+
+  .rejectButton {
+    background: transparent;
+    border: 2px solid $accent-color;
+    text-decoration: none;
+  }
+}

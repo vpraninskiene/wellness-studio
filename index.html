@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Developer and designer: Valentina Praninskiene"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="sub-header">
+          <div class="sub-header-phone">
+            <i class="fa-solid fa-phone" style="color: #40c397"></i>
+            <a href="tel:+370 607 72974">+370 607 72974</a>
+          </div>
+        </div>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="#"><div class="logo"></div></a>
+          <ul>
+            <li><a class="active" href="#">Pradžia</a></li>
+            <li><a href="#about">Apie Mus</a></li>
+            <li><a href="#services">Paslaugos</a></li>
+            <li><a href="#gallery">Galerija</a></li>
+            <li><a href="#contacts">Kontaktai</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <div
+          data-aos="fade-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="hero-text"
+        >
+          <p class="hero-accent">Sveiki atvikę į</p>
+          <h1>
+            <span>Wellness</span><br />
+            Studio
+          </h1>
+          <p>Klasikiniai, atpalaiduojantys masažai</p>
+          <button class="hero-btn"><a href="#services">Plačiau</a></button>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="studio" data-aos="fade-right" data-aos-duration="1000">
+          <div class="studio-description">
+            <div class="lotus-icon">
+              <img src="/img/svg/lotus-white-svgrepo-com.svg" alt="lotus" />
+            </div>
+
+            <div class="accent-text">studija</div>
+            <h2>Apie mus</h2>
+            <p class="studio-text">
+              Salonas “Wellness Studio” - tai jauki aplinka, atpalaiduojanti
+              muzika, aromaterapija, šiluma ir individualus dėmesis kiekvienam
+              klientui. Kvieciame atsipaladuoti po sunkios dienos, sumažinti
+              stesą bei įtampą, užsimiršti ir pabėgti nuo rutinos
+            </p>
+          </div>
+          <div class="about-img"></div>
+        </div>
+        <div class="specialist" data-aos="fade-left" data-aos-duration="1000">
+          <div class="specialist-image">
+            <div class="specialist-img"></div>
+          </div>
+
+          <div class="specialist-description" class="studio-description">
+            <div class="lotus-icon">
+              <img src="/img/svg/lotus-white-svgrepo-com.svg" alt="lotus" />
+            </div>
+            <div class="accent-text">specialistas</div>
+            <h2>Ona Jakobek</h2>
+            <div class="specialist-phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="phone-number">+370 607 72974</div>
+            </div>
+            <p class="specialist-text">
+              Masažas veikia visas fiziologines ir psichologines žmogaus
+              funkcijas, pašalina raumenų bei emocinę įtampą, gerina kraujotaka,
+              stimuliuoja limfos apytaką, detoksikuoja, giliai atpalaiduoja visą
+              kuną, suteikia harmonijos jausmą bei ramybę.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="services"
+        id="services"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <div class="lotus-icon">
+          <img src="/img/svg/lotus-2-svgrepo-com.svg" alt="lotus" />
+        </div>
+        <div class="accent-text">patirtis</div>
+        <h2>Paslaugos</h2>
+        <p>Kūno ir veido masažai</p>
+        <div class="services-cards">
+          <div class="flip-card-3D-wrapper">
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="service-image">
+                  <img src="/img/jpg/service-1.png" alt="s-1" />
+                </div>
+                <h3>Masažas karštais akmenimis</h3>
+                <div class="service-icon">
+                  <img src="/img/svg/snowflake.svg" alt="snowflake" />
+                </div>
+                <p>
+                  Šis masažas tinka tiek šaltuoju metų laiku, tiek šiltuoju.
+                  Akmenys sušildo ir atpalaiduoja raumenis, pagerina
+                  cirkuliaciją, ramina nervų sistemą. Viso kūno masažas karštais
+                  akmenimis atliekamas derinant rankų bei akmenų technikas.
+                </p>
+                <span class="price-time">€33.00 / 60 min.</span>
+                <button class="flip-card-btn-turn-to-back">
+                  Masažo aprašymas
+                </button>
+              </div>
+              <div class="flip-card-back">
+                <button class="flip-card-btn-turn-to-front">X</button>
+                <h3>Masažas karštais akmenimis</h3>
+                <p>
+                  Klientas maloniai pasitinkamas, parodoma persirengimo vieta ir
+                  pasiruošiama masažui. Kai klientas pasirengęs, gulasi veidu
+                  žemyn ant masažo stalo, uždengiamas rankšluosčiais. Masažas
+                  karštais akmenimis atliekamas rankų ir akmenų judesiais.
+                  Klientui gulint uždedami karšti akmenys ant rankšluosčio
+                  nugaros sityje. Ir pradedamas masažas nuo kojų. Masažuojama
+                  naudojant rankų judesius, atliekami glostymo, trynimo,
+                  vibraciniai judesiai pėdų, blauzdų ir šlaunų srityse, tuomet
+                  paimami akmenys ir masažuojama su jais. Masažuojama apie 20
+                  min. Tada karšti akmenys nuo nugaros nuimami. Užtepamas
+                  aliejus ant odos ir masažuojama rankomis glostymo, trynimo,
+                  maigymo, vibracijos judesiais, tuomet vėl paimami akmenys ir
+                  masažuojama su jais, masažuojama 20 min. Poto klientas
+                  apsiverčia ant nugaros, paimami šilti akmenys bei masažuojamos
+                  kojos, pilvas, rankos, kaklas masažuojama 20 min. Iš viso
+                  masažas trunka apie 60 min. Po procedūros leidžiama klientui
+                  pagulėti, pasiūloma arbata arba vanduo ir maloniai išlydima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-3D-wrapper">
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="service-image">
+                  <img src="/img/jpg/service-2.png" alt="s-2" />
+                </div>
+                <h3>Terapeutinis/Klasikinis masažas</h3>
+                <div class="service-icon">
+                  <img src="/img/svg/snowflake.svg" alt="snowflake" />
+                </div>
+                <p>
+                  Masažas tinkantis bet kurio amžiaus žmonėms padeda pašalinti
+                  įtampą, pagerina kraujotaką, ramina ir teigiamai veikia vidinę
+                  organizmo būseną .
+                </p>
+                <span class="price-time">€30.00 / 60 min.</span>
+                <button class="flip-card-btn-turn-to-back">
+                  Masažo aprašymas
+                </button>
+              </div>
+              <div class="flip-card-back">
+                <button class="flip-card-btn-turn-to-front">X</button>
+                <h3>Terapeutinis/Klasikinis masažas</h3>
+                <p>
+                  Klientas maloniai pasitinkamas, parodoma persirengimo vieta ir
+                  pasiruošiama masažui. Kai klientas pasirengęs, gulasi veidu
+                  žemyn ant masažo stalo, uždengiamas rankšluosčiais.
+                  Terapeutinis, klasikinis masažas atliekamas glostymo, trynimo,
+                  maigymo ir vibracijos judesiais. Užtepama aliejaus ant odos ir
+                  pradedama masažuoti nuo pėdų, blauzdų ir šlaunų masažuojama
+                  apie 20 min. Prieinama prie nugaros, kaklo srities bei galvos
+                  ir taip pat rankų judesiais masažuojama apie 20 min. Po to
+                  klientas apsiverčia ant nugaros ir masažuojamos kojos, pilvas,
+                  rankos, veidas, masažuojama 20 min. Išviso masažas trunka 60
+                  min. Po procedūros leidžiama klientui pagulėti, pasiūloma
+                  arbata arba vanduo ir maloniai išlydima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-3D-wrapper">
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="service-image">
+                  <img src="/img/jpg/service-3.png" alt="s-3" />
+                </div>
+                <h3>Anticeliulitinis masažas</h3>
+                <div class="service-icon">
+                  <img src="/img/svg/snowflake.svg" alt="snowflake" />
+                </div>
+                <p>
+                  Vienas veiksmingiausiu būdų celiulitui gydyti yra vakuuminės
+                  taurės. Šiam masažui naudojamos ir taurės ir rankų technika.
+                  Masažas gerina medžiagų apykaitą, kraujotaką, limfos
+                  nutekėjimą. Mažina poodinį riebalų sluoksnį, lygina, stangrina
+                  odą.
+                </p>
+                <span class="price-time">€25.00 / 60 min.</span>
+                <button class="flip-card-btn-turn-to-back">
+                  Masažo aprašymas
+                </button>
+              </div>
+              <div class="flip-card-back">
+                <button class="flip-card-btn-turn-to-front">X</button>
+                <h3>Anticeliulitinis masažas</h3>
+                <p>
+                  Klientas maloniai pasitinkamas, parodoma persirengimo vieta ir
+                  pasiruošiama masažui. Kai klientas pasiruošęs, gulasi veidu
+                  žemyn ant masažo stalo, uždengiamas rankšluosčiais.
+                  Anticeliulitinis masažas atliekamas probleminese vietose, kur
+                  yra celiulito (šlaunų, kryžkaulio, pilvo, sėdmenų zonose).
+                  Ištepus aliejumi naudojami rankų judesiai glostymas, trynimas,
+                  žnaibymas, vibracija. Tuomet naudojamos vakuumines taurelės ir
+                  masažuojama spiraliniais, zigzaginiais judesiais. Procedūra
+                  trunka 60 min. Baigus masažą įmasažuojamas anticeliulitinis
+                  kremas. Po procedūros leidžiama klientui pagulėti, pasiūloma
+                  arbata arba vanduo ir maloniai išlydima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-3D-wrapper">
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="service-image">
+                  <img src="/img/jpg/service-4.png" alt="s-4" />
+                </div>
+                <h3>Sportinis masažas</h3>
+                <div class="service-icon">
+                  <img src="/img/svg/snowflake.svg" alt="snowflake" />
+                </div>
+                <p>
+                  Tai puikus masažas norint padėti nuovargio, raumenų įtampai ir
+                  skausmo kamojamai nugarai, pečių bei kaklo sričiai, ypač
+                  rekomenduojama sėdimą darbą dirbantiems žmonėms. Taip pat po
+                  intensyvaus darbo sporto salėje.
+                </p>
+                <span class="price-time">€35.00 / 60 min.</span>
+                <button class="flip-card-btn-turn-to-back">
+                  Masažo aprašymas
+                </button>
+              </div>
+              <div class="flip-card-back">
+                <button class="flip-card-btn-turn-to-front">X</button>
+                <h3>Sportinis masažas</h3>
+                <p>
+                  Klientas maloniai pasitinkamas, parodoma persirengimo vieta ir
+                  pasiruošiama masažui, išanalizuojama sveikatos būklė. Kai
+                  klientas pasirengęs gulasi veidu žemyn ant masažo
+                  stalo,uždengiamas rankšluosčiais. Masažas atliekamas rankų
+                  technika, naudojant glostymo, trynimo, maigymo ir vibracijos
+                  judesius. Naudojame aliejų ir masažuojame nuo pėdų, blauzdų,
+                  šlaunų, po to masažuojama nugara ir kaklas tai trunka apie 40
+                  min. Vėliau klientas apsiverčia ant nugaros ir aliejumi
+                  masažuojamos kojos, pilvas, rankos, išviso masažas trunka 60
+                  min. Po procedūros leidžiama kientui pagulėti, pasiūloma
+                  arbata arba vanduo ir maloniai išlydima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-3D-wrapper">
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="service-image">
+                  <img src="/img/jpg/service-5.jpg" alt="s-5" />
+                </div>
+                <h3>Medaus masažas</h3>
+                <div class="service-icon">
+                  <img src="/img/svg/snowflake.svg" alt="snowflake" />
+                </div>
+                <p>
+                  Meduje yra daug sveikatai naudingų medžiagų, mineralų. Medaus
+                  masažas ne tik gerina sveikatą, bet ir puoselėja grožį,
+                  maitina, drėkina odą. Masažuojant natūraliu medumi pasišalina
+                  negivos odos lastelės, toksinai ir šlakai, pagerėja jos
+                  tonusas. Stiprinamas imunitetas, mažinamas nervų sistemos
+                  dirglumas.
+                </p>
+                <span class="price-time">€33.00 / 60 min.</span>
+                <button class="flip-card-btn-turn-to-back">
+                  Masažo aprašymas
+                </button>
+              </div>
+              <div class="flip-card-back">
+                <button class="flip-card-btn-turn-to-front">X</button>
+                <h3>Medaus masažas</h3>
+                <p>
+                  Klientas maloniai pasitinkamas, parodoma persirengimo vieta ir
+                  pasiruošiama masažui, išanalizuojama sveikatos būklė. Kai
+                  klientas pasirengęs gulasi veidu žemyn ant masažo
+                  stalo,uždengiamas rankšluosčiais. Medaus masažas atliekamas
+                  rankų technika, naudojant glostymo, trynimo, maigymo ir
+                  vibracijos judesius. Naudojame aliejų ir masažuojame nuo pėdų,
+                  blauzdų, šlaunų, po to tepamas medus ant nugaros ir
+                  masažuojama tai trunka apie 40 min. Vėliau klientas apsiverčia
+                  ant nugaros ir aliejumi masažuojamos kojos, pilvas, rankos,
+                  išviso masažas trunka 60 min. Po procedūros leidžiama kientui
+                  pagulėti, pasiūloma arbata arba vanduo ir maloniai išlydima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-3D-wrapper">
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="service-image">
+                  <img src="/img/jpg/service-6.jpg" alt="s-6" />
+                </div>
+                <h3>Klasikinis veido masažas</h3>
+                <div class="service-icon">
+                  <img src="/img/svg/snowflake.svg" alt="snowflake" />
+                </div>
+                <p>
+                  Masažasatliekamas veido ir kaklo sričiai, efektyvus norint
+                  išlaikyti odos elastingumą, gyvybingumą bei jaunistę.
+                  Klasikinis veido masažas tiks, bet kokio amžiaus moteriai ar
+                  vyrui, taip pat tinka, bet kokiam odos tipui. Masažas
+                  efektyviai pagerina kraujotaką, limfinės sistemos darbą.
+                </p>
+                <span class="price-time">€15.00 / 30 min.</span>
+                <button class="flip-card-btn-turn-to-back">
+                  Masažo aprašymas
+                </button>
+              </div>
+              <div class="flip-card-back">
+                <button class="flip-card-btn-turn-to-front">X</button>
+                <h3>Klasikinis veido masažas</h3>
+                <p>
+                  Pirmiausia oda paruošiama procedūrai - nuvalomas makiažas.
+                  Tuomet atliekamas klasikinis veido ir kaklo masažas. Masažo
+                  metu atliekami glostymo, trynimo, maigymo judesiai. Procedūra
+                  užbaigiama lengvais glostomaisiais judesiais.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        class="contradictions"
+        id="contradictions"
+      >
+        <div class="lotus-icon">
+          <img src="/img/svg/lotus-2-svgrepo-com.svg" alt="lotus" />
+        </div>
+        <div class="accent-text">dėmesio</div>
+        <h2>Kontradikcijos</h2>
+        <p>Aplinkybės dėl kurių masažo paslaugos negali būti teikiamos</p>
+        <ul class="contradictions-list">
+          <li>Esant aukštai temperatūrai</li>
+          <li>Umaus uždegimo metu</li>
+          <li>
+            Esant pūliniams kūno paviršiuje, odos bėrimams, daugybinėms karpoms
+            ir polinkiui į kraujosrūvas
+          </li>
+          <li>Sergant venų uždegimu</li>
+          <li>Esant stipriai išsiplėtusioms venoms negalima masažuoti kojų</li>
+          <li>
+            Esant tulžies pūslės ir inkstų akmenims, kirkšnies išvaržai,
+            moterims menstruacijų ir nėštumo metu nemasažuojamas pilvas.
+          </li>
+          <li>Esant bet kokiems augliams (ir piktybiniams, ir gerybiniams)</li>
+          <li>Sergant aktyvios formos tuberkulioze</li>
+          <li>Esant kraujo ligoms</li>
+          <li>Esant lūžiams ir atviroms žaizdoms</li>
+        </ul>
+      </section>
+      <section
+        class="gallery"
+        id="gallery"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <div class="lotus-icon">
+          <img src="/img/svg/lotus-2-svgrepo-com.svg" alt="lotus" />
+        </div>
+        <div class="accent-text">aplinka</div>
+        <h2>Galerija</h2>
+        <div class="gallery-images">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            class="gallery-image"
+          >
+            <div class="gallery-frame-1"></div>
+            <img src="/img/jpg/gallery-1.jpg" alt="gallery-1" />
+          </div>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            class="gallery-image"
+          >
+            <div class="gallery-frame-2"></div>
+            <img src="/img/jpg/gallery-2.jpg" alt="gallery-2" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            class="gallery-image"
+          >
+            <div class="gallery-frame-3"></div>
+            <img src="/img/jpg/gallery-3.jpg" alt="gallery-3" />
+          </div>
+        </div>
+      </section>
+      <section id="gift" data-aos="fade-down" data-aos-duration="1500">
+        <div class="lotus-icon">
+          <img src="/img/svg/lotus-2-svgrepo-com.svg" alt="lotus" />
+        </div>
+        <div class="accent-text">dovana</div>
+        <h2>Dovanų kuponas</h2>
+        <div class="gift-coupon">
+          <div class="gift-coupon-image"></div>
+          <div class="gift-coupon-text">
+            <div class="gift-icon">
+              <img src="/img/svg/et--gift (1).svg" alt="gift" />
+            </div>
+
+            <h2>Pradžiugink savo artimą nuostabia dovana!</h2>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contacts"
+        id="contacts"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <div class="lotus-icon">
+          <img src="/img/svg/lotus-2-svgrepo-com.svg" alt="lotus" />
+        </div>
+        <div class="accent-text">susisiekime</div>
+        <h2>Kontaktai</h2>
+
+        <div class="contacts-and-map">
+          <div class="contacts-options">
+            <div class="contacts-item">
+              <div class="contact-item-title">
+                <i class="fa-solid fa-location-dot"></i>
+                <strong>Studijos adresas:</strong>
+              </div>
+              <p>Eitminų g.18-118, Perkūnkiemis, Vilnius</p>
+            </div>
+            <div class="contacts-item">
+              <div class="contact-item-title">
+                <i class="fa-solid fa-phone"></i>
+                <strong>Telefonas</strong>
+              </div>
+              <p>+370 607 72974</p>
+            </div>
+            <div class="contacts-item">
+              <div class="contact-item-title">
+                <i class="fa-solid fa-envelope"></i>
+                <strong>El. paštas</strong>
+              </div>
+              <p>ona.jakobek@gmail.com</p>
+            </div>
+          </div>
+          <div class="map-container">
+            <div class="map" style="width: 100%">
+              <iframe
+                width="100%"
+                height="400"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Eitminu%20str.%2018%20Vilnius%20Lithuania+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.gps.ie/">gps tracker sport</a></iframe
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>2024©Wellness studio. Visos teisės saugomos</p>
+        <a
+          class="facebook"
+          href="https://www.facebook.com/wellness.studio.lt"
+          target="_blank"
+          ><i
+            class="fa-brands fa-facebook"
+            style="color: white; font-size: larger"
+          ></i
+        ></a>
+      </footer>
+    </div>
+    <div id="consentBox">
+      <div id="consentContent">
+        <h3 id="consentHeader">Mes vertiname jūsų privatumą</h3>
+        <p>
+          Naudojame slapukus siekdami pagerinti jūsų naršymo patirtį, teikti
+          suasmenintus skelbimus ar turinį ir analizuoti duomenų srautą.
+          <br />Spustelėdami „Priimti visus“ sutinkate su mūsų slapukų
+          naudojimu.
+        </p>
+        <div class="buttons">
+          <button class="consentButton">Priimti visus</button>
+          <button class="rejectButton">Atmesti visus</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/739449f500.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

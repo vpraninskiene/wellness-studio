@@ -1,0 +1,27 @@
+@mixin img-style {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin accent-text {
+  color: $accent-color;
+  font-family: "Ruthie";
+  font-size: 24px;
+}
+
+@mixin desktop-font {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@mixin mobile-font {
+  font-size: 16px;
+  line-height: 24px;
+}

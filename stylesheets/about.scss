@@ -1,0 +1,135 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  min-height: 90vh;
+  width: 100%;
+
+  .studio {
+    @include flex;
+    flex-direction: row-reverse;
+    background-color: rgb(175, 208, 197, 0.7);
+    margin: 0 108px;
+
+    .studio-description {
+      @include flex;
+      flex-direction: column;
+      width: 100%;
+      height: 440px;
+      padding: 40px 0;
+      .studio-text {
+        padding: 40px;
+        text-align: center;
+        @include desktop-font;
+      }
+    }
+
+    .about-img {
+      background: url(/img/jpg/about-studio.jpg);
+      width: 100%;
+      height: 440px;
+      @include img-style;
+    }
+  }
+
+  .specialist {
+    @include flex;
+    flex-direction: row-reverse;
+    margin: 0 108px;
+    .specialist-description {
+      @include flex;
+      flex-direction: column;
+      background-color: rgb(175, 208, 197, 0.7);
+      height: 440px;
+      width: 100%;
+
+      .specialist-phone {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding-top: 10px;
+      }
+
+      .specialist-text {
+        padding: 40px;
+        text-align: center;
+        @include desktop-font;
+      }
+    }
+
+    .specialist-image {
+      display: flex;
+      justify-content: left;
+      width: 100%;
+      height: 440px;
+      background-color: rgb(175, 208, 197, 0.7);
+      .specialist-img {
+        height: 100%;
+        width: 100%;
+        background: url(/img/jpg/specialist.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1281px) {
+  .about {
+    min-height: 80vh;
+    .studio,
+    .specialist {
+      margin: 0 54px;
+    }
+    .studio {
+      .studio-description {
+        .studio-text {
+          padding: 20px;
+        }
+      }
+    }
+
+    .specialist {
+      .specialist-description {
+        .specialist-text {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin: auto;
+    min-height: 130vh;
+    .studio,
+    .specialist {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .studio {
+      .studio-description {
+        .studio-text {
+          @include mobile-font;
+          padding: 30px;
+        }
+      }
+    }
+
+    .about-img {
+      display: none;
+    }
+
+    .specialist {
+      .specialist-description {
+        .specialist-text {
+          @include mobile-font;
+          padding: 30px;
+        }
+      }
+    }
+  }
+}

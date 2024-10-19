@@ -1,0 +1,59 @@
+.contradictions {
+  @include flex;
+  min-height: 7vh;
+  flex-direction: column;
+  color: $text-color;
+  width: 100%;
+
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  .contradictions-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    line-height: 30px;
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    li::before {
+      content: url(/img/svg/check.svg);
+      display: inline-block;
+      position: absolute;
+      left: -40px;
+      top: 2px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1281px) {
+  .contradictions {
+    margin: 0;
+    text-align: center;
+    min-height: 60vh;
+    .contradictions-list {
+      text-align: left;
+      padding-top: 30px;
+      margin: 0 54px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contradictions {
+    margin: 0 40px;
+    text-align: center;
+    min-height: 55vh;
+    .contradictions-list {
+      text-align: left;
+      padding-top: 30px;
+      margin: 0 50px;
+      @include mobile-font;
+    }
+  }
+}

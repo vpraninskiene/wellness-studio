@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $body-color;
+  font-family: "Judson";
+}
+
+.accent-text {
+  @include accent-text;
+  font-family: Ruthie;
+}
+
+@media (max-width: 768px) {
+  .aos-init {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
