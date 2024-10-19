@@ -1,8 +1,7 @@
 const consentBox = document.getElementById("consentBox");
 const acceptBtn = document.querySelector(".consentButton");
 const rejectBtn = document.querySelector(".rejectButton");
-
-// const navbar = document.querySelector("header");
+const navbar = document.querySelector("nav");
 
 // cookies
 
@@ -22,13 +21,13 @@ checkCookie !== -1
 
 //   nav scroll
 
-// window.onscroll = () => {
-//   if (window.scrollY > 200) {
-//     navbar.classList.add("nav-active");
-//   } else {
-//     navbar.classList.remove("nav-active");
-//   }
-// };
+window.onscroll = () => {
+  if (window.scrollY > 200) {
+    navbar.classList.add("nav-active");
+  } else {
+    navbar.classList.remove("nav-active");
+  }
+};
 
 // services flip cards
 
@@ -56,7 +55,5 @@ for (let m = 0; m < flipFrontBtns.length; m++) {
     flipCards[m].classList.toggle("do-flip")[m];
   });
 }
-
-// menu
 
 AOS.init();
