@@ -12,7 +12,7 @@
     color: white;
     overflow: hidden;
     margin-top: 80px;
-    background: url(../images/jpg/dovana-2.jpg);
+    background: url(../images/webp/dovana-2.webp);
     @include img-style;
     padding: 20px 108px;
 
@@ -32,7 +32,7 @@
     }
 
     .gift-coupon-image {
-      background: url(../images/jpg/gift-coupon.jpg);
+      background: url(../images/webp/gift-coupon.webp);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;

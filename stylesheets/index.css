@@ -39,18 +39,18 @@ header .sub-header {
   display: flex;
   justify-content: right;
   background-color: #40c397;
-  padding: 18px 108px;
-  height: 8vh;
+  padding: 5px 108px;
+  height: 9vh;
 }
 header .sub-header .sub-header-phone {
-  position: absolute;
-  top: 0;
   display: flex;
-  align-items: center;
-  gap: 8px;
   width: fit-content;
-  border: none;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
+  gap: 5px;
+  z-index: 10;
 }
 header .sub-header .sub-header-phone .fa-phone {
   padding: 5px;
@@ -63,7 +63,7 @@ header .sub-header .sub-header-phone a {
 }
 header nav {
   position: absolute;
-  top: 55%;
+  top: 60%;
   background-color: #e1e1e1;
   display: flex;
   justify-content: space-between;
@@ -71,14 +71,14 @@ header nav {
   margin-left: 2%;
   height: 80px;
   width: 95%;
-  padding: 0 80px;
+  padding: 10px 80px;
   border-radius: 15px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.6);
 }
 header nav .logo {
   height: 60px;
   width: 120px;
-  background: url(../images/png/Logo.png);
+  background: url(../images/webp/Logo.webp);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -108,15 +108,14 @@ header #check {
 
 @media (max-width: 768px) {
   header .sub-header {
-    justify-content: space-between;
-    padding: 8px 20px;
+    justify-content: left;
+    padding: 0 10px;
   }
   header nav {
     top: 54%;
-    padding: 20px;
-    height: 60px;
+    padding: 0;
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     border-radius: 15px 15px 0 0;
   }
   header nav .logo {
@@ -125,7 +124,7 @@ header #check {
   }
   header nav ul {
     position: fixed;
-    top: 92px;
+    top: 115px;
     right: -100%;
     background-color: #e1e1e1;
     width: 100%;
@@ -153,7 +152,7 @@ header #check {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background: url(../images/jpg/hero.jpg);
+  background: url(../images/webp/hero_w.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -268,7 +267,7 @@ header #check {
   line-height: 1.6;
 }
 .about .studio .about-img {
-  background: url(../images/jpg/about-studio.jpg);
+  background: url(../images/webp/about-studio.webp);
   width: 100%;
   height: 440px;
   background-position: center;
@@ -313,7 +312,7 @@ header #check {
 .about .specialist .specialist-image .specialist-img {
   height: 100%;
   width: 100%;
-  background: url(../images/jpg/specialist.jpg);
+  background: url(../images/webp/specialist.webp);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -639,7 +638,7 @@ header #check {
   color: white;
   overflow: hidden;
   margin-top: 80px;
-  background: url(../images/jpg/dovana-2.jpg);
+  background: url(../images/webp/dovana-2.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -661,7 +660,7 @@ header #check {
   opacity: 0.5;
 }
 #gift .gift-coupon .gift-coupon-image {
-  background: url(../images/jpg/gift-coupon.jpg);
+  background: url(../images/webp/gift-coupon.webp);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
