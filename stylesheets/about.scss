@@ -25,7 +25,7 @@
     }
 
     .about-img {
-      background: url(/img/jpg/about-studio.jpg);
+      background: url(../images/jpg/about-studio.jpg);
       width: 100%;
       height: 440px;
       @include img-style;
@@ -66,7 +66,7 @@
       .specialist-img {
         height: 100%;
         width: 100%;
-        background: url(/img/jpg/specialist.jpg);
+        background: url(../images/jpg/specialist.jpg);
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
