@@ -1,7 +1,6 @@
 const consentBox = document.getElementById("consentBox");
 const acceptBtn = document.querySelector(".consentButton");
 const rejectBtn = document.querySelector(".rejectButton");
-const navbar = document.querySelector("nav");
 
 // cookies
 
@@ -18,16 +17,6 @@ let checkCookie = document.cookie.indexOf("CookieBy=WellnessStudio");
 checkCookie !== -1
   ? consentBox.classList.add("hide")
   : consentBox.classList.remove("hide");
-
-//   nav scroll
-
-window.onscroll = () => {
-  if (window.scrollY > 200) {
-    navbar.classList.add("nav-active");
-  } else {
-    navbar.classList.remove("nav-active");
-  }
-};
 
 // services flip cards
 
