@@ -296,6 +296,10 @@ header #check {
   gap: 4px;
   padding-top: 10px;
 }
+.about .specialist .specialist-description .specialist-phone a {
+  text-decoration: none;
+  color: white;
+}
 .about .specialist .specialist-description .specialist-text {
   padding: 40px;
   text-align: center;
@@ -413,6 +417,10 @@ header #check {
   visibility: hidden;
 }
 .services .services-cards .flip-card-3D-wrapper .flip-card .flip-card-btn-turn-to-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   position: absolute;
   bottom: 4%;
   right: 6%;
@@ -422,7 +430,8 @@ header #check {
   color: #fff;
   text-align: center;
   padding: 10px;
-  width: 80px;
+  font-size: 16px;
+  line-height: 24px;
   transition: all 0.5s;
   cursor: pointer;
   font-size: 16px;
@@ -444,7 +453,7 @@ header #check {
   backface-visibility: hidden;
   z-index: 2;
   border-radius: 15px;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.6);
 }

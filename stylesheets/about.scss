@@ -48,6 +48,11 @@
         align-items: center;
         gap: 4px;
         padding-top: 10px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
 
       .specialist-text {
