@@ -1,6 +1,7 @@
 const consentBox = document.getElementById("consentBox");
 const acceptBtn = document.querySelector(".consentButton");
 const rejectBtn = document.querySelector(".rejectButton");
+let currentYearElement = document.getElementById("currentYear");
 
 // cookies
 
@@ -44,5 +45,11 @@ for (let m = 0; m < flipFrontBtns.length; m++) {
     flipCards[m].classList.toggle("do-flip")[m];
   });
 }
+
+//Show current year
+
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+currentYearElement.textContent = currentYear;
 
 AOS.init();

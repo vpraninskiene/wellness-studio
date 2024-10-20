@@ -9,13 +9,13 @@ header {
     display: flex;
     justify-content: right;
     background-color: $accent-color;
-    padding: 5px 108px;
+    padding: 15px 108px;
     height: 9vh;
 
     .sub-header-phone {
       display: flex;
       width: fit-content;
-      height: 40px;
+      height: 20px;
       justify-content: center;
       align-items: center;
       padding: 5px;
@@ -88,11 +88,11 @@ header {
 @media (max-width: 768px) {
   header {
     .sub-header {
-      justify-content: left;
-      padding: 0 10px;
+      padding: 12px;
+      height: 8vh;
     }
     nav {
-      top: 54%;
+      top: 80%;
       padding: 0;
       width: 100%;
       margin: 0;
