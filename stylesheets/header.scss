@@ -9,8 +9,8 @@ header {
     display: flex;
     justify-content: right;
     background-color: $accent-color;
-    padding: 15px 108px;
-    height: 9vh;
+    padding: 10px 108px;
+    height: 70px;
 
     .sub-header-phone {
       display: flex;
@@ -89,7 +89,7 @@ header {
   header {
     .sub-header {
       padding: 12px;
-      height: 8vh;
+      height: 6vh;
     }
     nav {
       top: 80%;

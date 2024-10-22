@@ -3,6 +3,24 @@ const acceptBtn = document.querySelector(".consentButton");
 const rejectBtn = document.querySelector(".rejectButton");
 let currentYearElement = document.getElementById("currentYear");
 
+const checkbox = document.querySelector("#check");
+const menu = document.querySelector(".menu");
+
+//nav
+
+checkbox.addEventListener("click", function () {
+  if (this.checked) {
+    document.addEventListener("click", listener);
+  }
+});
+
+const listener = function (e) {
+  if (e.target != checkbox && e.target != menu) {
+    checkbox.checked = false;
+    document.removeEventListener("click", listener);
+  }
+};
+
 // cookies
 
 acceptBtn.addEventListener("click", () => {
@@ -18,6 +36,8 @@ let checkCookie = document.cookie.indexOf("CookieBy=WellnessStudio");
 checkCookie !== -1
   ? consentBox.classList.add("hide")
   : consentBox.classList.remove("hide");
+
+//nav
 
 // services flip cards
 
