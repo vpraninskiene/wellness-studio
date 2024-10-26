@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 65vh;
+  scroll-margin: 100px;
 
   .contacts-and-map {
     @include flex;
@@ -70,6 +71,7 @@
 }
 @media (max-width: 768px) {
   .contacts {
+    scroll-margin: 120px;
     .contacts-and-map {
       flex-direction: column;
       width: 100%;

@@ -3,6 +3,7 @@
   flex-direction: column;
   margin: 0 108px;
   min-height: 200px;
+  scroll-margin: 100px;
 
   h2 {
     padding-bottom: 20px;
@@ -32,6 +33,8 @@
         transition: all 1s ease-in-out;
         transform-style: preserve-3d;
         .flip-card-btn-turn-to-back {
+          position: absolute;
+          bottom: 30px;
           border-radius: 4px;
           background-color: $accent-color;
           border: none;
@@ -72,9 +75,10 @@
 
         .flip-card-front,
         .flip-card-back {
-          @include flex;
+          display: flex;
+          align-items: center;
           flex-direction: column;
-          gap: 15px;
+          gap: 20px;
           width: 100%;
           height: 100%;
           position: absolute;
@@ -93,11 +97,17 @@
             width: 130px;
             border-radius: 50%;
           }
+
+          .price-time {
+            font-size: 20px;
+          }
         }
 
         .flip-card-back {
           transform: rotateY(180deg);
           text-align: justify;
+          justify-content: center;
+          padding-top: 0;
           font-size: 14px;
           line-height: 22px;
         }
@@ -129,6 +139,7 @@
   .services {
     margin: 0 40px;
     min-height: 500px;
+    scroll-margin: 120px;
 
     .services-cards {
       padding-top: 30px;

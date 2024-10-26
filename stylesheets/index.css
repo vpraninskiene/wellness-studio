@@ -242,6 +242,7 @@ header #check {
   color: white;
   min-height: 90vh;
   width: 100%;
+  scroll-margin: 130px;
 }
 .about .studio {
   display: flex;
@@ -368,6 +369,7 @@ header #check {
   flex-direction: column;
   margin: 0 108px;
   min-height: 200px;
+  scroll-margin: 100px;
 }
 .services h2 {
   padding-bottom: 20px;
@@ -402,6 +404,8 @@ header #check {
   transform-style: preserve-3d;
 }
 .services .services-cards .flip-card-3D-wrapper .flip-card .flip-card-btn-turn-to-back {
+  position: absolute;
+  bottom: 30px;
   border-radius: 4px;
   background-color: #40c397;
   border: none;
@@ -443,9 +447,8 @@ header #check {
 .services .services-cards .flip-card-3D-wrapper .flip-card .flip-card-back {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -462,9 +465,14 @@ header #check {
   width: 130px;
   border-radius: 50%;
 }
+.services .services-cards .flip-card-3D-wrapper .flip-card .flip-card-front .price-time {
+  font-size: 20px;
+}
 .services .services-cards .flip-card-3D-wrapper .flip-card .flip-card-back {
   transform: rotateY(180deg);
   text-align: justify;
+  justify-content: center;
+  padding-top: 0;
   font-size: 14px;
   line-height: 22px;
 }
@@ -488,6 +496,7 @@ header #check {
   .services {
     margin: 0 40px;
     min-height: 500px;
+    scroll-margin: 120px;
   }
   .services .services-cards {
     padding-top: 30px;
@@ -564,6 +573,7 @@ header #check {
   flex-direction: column;
   margin: 0 108px;
   color: #243238;
+  scroll-margin: 100px;
 }
 .gallery .gallery-images {
   display: flex;
@@ -620,6 +630,7 @@ header #check {
   .gallery {
     min-height: 100vh;
     width: 100%;
+    scroll-margin: 120px;
   }
   .gallery .gallery-images {
     flex-direction: column;
@@ -729,6 +740,7 @@ header #check {
   flex-direction: column;
   width: 100%;
   min-height: 65vh;
+  scroll-margin: 100px;
 }
 .contacts .contacts-and-map {
   display: flex;
@@ -790,6 +802,9 @@ header #check {
   }
 }
 @media (max-width: 768px) {
+  .contacts {
+    scroll-margin: 120px;
+  }
   .contacts .contacts-and-map {
     flex-direction: column;
     width: 100%;

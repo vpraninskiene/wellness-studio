@@ -6,6 +6,7 @@
   flex-direction: column;
   margin: 0 108px;
   color: $text-color;
+  scroll-margin: 100px;
 
   .gallery-images {
     display: flex;
@@ -64,6 +65,7 @@
   .gallery {
     min-height: 100vh;
     width: 100%;
+    scroll-margin: 120px;
 
     .gallery-images {
       flex-direction: column;
