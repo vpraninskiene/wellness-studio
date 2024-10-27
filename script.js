@@ -4,7 +4,7 @@ const rejectBtn = document.querySelector(".rejectButton");
 let currentYearElement = document.getElementById("currentYear");
 
 const checkbox = document.querySelector("#check");
-const menu = document.querySelector(".menu");
+const checkbtn = document.querySelector(".checkbtn i");
 
 //nav
 
@@ -15,7 +15,7 @@ checkbox.addEventListener("click", function () {
 });
 
 const listener = function (e) {
-  if (e.target != checkbox && e.target != menu) {
+  if (e.target != checkbox && e.target != checkbtn) {
     checkbox.checked = false;
     document.removeEventListener("click", listener);
   }
